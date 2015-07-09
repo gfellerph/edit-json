@@ -3,5 +3,6 @@ bower_components
 test
 tests
 temp
+public
 *.sublime-project
 *.sublime-workspace
