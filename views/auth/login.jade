@@ -1,0 +1,26 @@
+h1 Login
+form(method="post" action="/auth/login")
+	fieldset
+		legend Login form
+		div
+			label(for="username") Username
+			input(
+				type="text"
+				name="username"
+				id="username"
+				placeholder="username"
+			)
+
+		div
+			label(for="password") Password
+			input(
+				type="password"
+				name="password"
+				id="password"
+				placeholder="password"
+			)
+		div
+			button(type="submit") Login
+			button(toggle-password-visibility) Show passwords
+		div
+			a(href="/auth/register") Register

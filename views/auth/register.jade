@@ -1,0 +1,42 @@
+h1 Register
+
+form(novalidate method='post' action='/auth/register')
+	fieldset
+		legend Register form
+		div
+			label(for='username') Pick a username
+			input(
+				type="text"
+				name="username"
+				id="username"
+				placeholder="username"
+			)
+		div
+			label(for='email') Your email adress
+			input(
+				type="email"
+				name="email"
+				id="email"
+				placeholder="email"
+			)
+		div
+			label(for="password") Choose a password
+			input(
+				type="password"
+				name="password"
+				id="password"
+				placeholder="password"
+			)
+		div
+			label(for="repeatPassword") Repeat chosen password
+			input(
+				type="password"
+				name="repeatPassword"
+				id="repeatPassword"
+				placeholder="repeat password"
+			)
+		div
+			button(type="submit") Register
+			button(toggle-password-visibility) Show passwords
+		div
+			a(href="/auth/login") Login
