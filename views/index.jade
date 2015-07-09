@@ -1,0 +1,19 @@
+extends shared/layout.jade
+
+block body
+	div.container(ng-controller='EditController')
+		div.tools
+			button(save) save
+		div.row
+
+			div.col-xs-6
+				section
+					ul
+						li(ng-repeat='king in kings')
+							p(ng-repeat='key in getKeys(king)')
+
+								label {{key}}
+								input(ng-model='king[key]')
+			div.col-xs-6
+				section
+					p {{kings | json}}
